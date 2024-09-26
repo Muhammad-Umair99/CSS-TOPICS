@@ -1,0 +1,36 @@
+/* PSEUDO ELEMENTS */
+/* A pseudo-element is a way in CSS to style specific parts of an element without needing to add extra HTML. It allows you to target specific portions of an element for styling. */
+
+/* SYANTAX */
+/* selector::pseudo-element {
+    property: value;
+} */
+
+/* Common Pseudo-Elements:
+1) ::before: Inserts content before the content of an element.
+2) ::after: Inserts content after the content of an element.
+3) ::first-letter: Styles the first letter of a block element.
+4) ::first-line: Styles the first line of a block element. */
+
+
+
+.quote::before{
+    content: "“";
+    font-size: 2rem;
+    color: gray;
+}
+
+.signature::after{
+    content: "- Author";
+    font-style: italic;
+}
+
+.para::first-line{
+    font-weight: bold;
+    color: blue;
+}
+
+.para2::first-letter{
+    font-size: 2rem;
+    color: red;
+}
